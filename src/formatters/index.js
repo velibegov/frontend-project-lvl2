@@ -3,7 +3,7 @@ import getPlain from "./Plain.js";
 import getJson from "./Json.js";
 
 const buildDifference = (tree, type) => {
-  const { format } = type;
+  const format = type ? type.format : "stylish";
   switch (format) {
     case "plain":
       return getPlain(tree);
