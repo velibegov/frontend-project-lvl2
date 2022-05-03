@@ -2,9 +2,7 @@
   "name": "@hexlet/code",
   "version": "1.0.0",
   "description": "filesDiff",
-  "bin": {
-    "nodejs-package": "bin/gendiff.js"
-  },
+  "bin": "bin/gendiff.js",
   "main": "index.js",
   "scripts": {
     "test": "npx jest"
