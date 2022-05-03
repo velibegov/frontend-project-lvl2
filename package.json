@@ -1,0 +1,38 @@
+{
+  "name": "@hexlet/code",
+  "version": "1.0.0",
+  "description": "filesDiff",
+  "bin": {
+    "nodejs-package": "bin/gendiff.js"
+  },
+  "main": "index.js",
+  "scripts": {
+    "test": "npx jest"
+  },
+  "type": "module",
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/velibegov/frontend-project-lvl2.git"
+  },
+  "author": "RVelibegov",
+  "license": "MIT",
+  "bugs": {
+    "url": "https://github.com/velibegov/frontend-project-lvl2/issues"
+  },
+  "homepage": "https://github.com/velibegov/frontend-project-lvl2#readme",
+  "dependencies": {
+    "commander": "^9.2.0",
+    "fs": "^0.0.1-security",
+    "js-yaml": "^4.1.0",
+    "lodash": "^4.17.21",
+    "yaml": "2.0.0",
+    "yaml-ast-parser": "^0.0.43"
+  },
+  "devDependencies": {
+    "eslint": "^8.14.0",
+    "eslint-config-airbnb-base": "^15.0.0",
+    "eslint-plugin-import": "^2.26.0",
+    "eslint-plugin-jest": "^26.1.5",
+    "jest": "^28.0.3"
+  }
+}
