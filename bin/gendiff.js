@@ -2,7 +2,7 @@
 
 import { Command } from "commander";
 import path from "path";
-import gendiff from "../index.js";
+import app from "../index.js";
 
 const command = new Command();
 
@@ -15,6 +15,6 @@ command
     const path1 = path.resolve(filepath1);
     const path2 = path.resolve(filepath2);
     const format = (typeof type === "object" && type !== null) ? type.format : "stylish";
-    console.log(gendiff(path1, path2, format));
+    console.log(app(path1, path2, format));
   });
 command.parse();

@@ -1,4 +1,4 @@
 import genDiff from "./src/GenDiff.js";
 
-const gendiff = (path1, path2, format = "stylish") => genDiff(path1, path2, format);
-export default gendiff;
+const app = (path1, path2, format = "stylish") => genDiff(path1, path2, format);
+export default app;
