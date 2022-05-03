@@ -57,9 +57,9 @@ const makeDifferenceTree = (content1, content2) => {
   return _.sortBy(_.toArray(tree), "key");
 };
 
-const genDiff = (path1, path2, type) => {
+const genDiff = (path1, path2, format) => {
   const diff = makeDifferenceTree(getFileContent(path1), getFileContent(path2));
-  return buildDifference(diff, type);
+  return buildDifference(diff, format);
 };
 
 export default genDiff;

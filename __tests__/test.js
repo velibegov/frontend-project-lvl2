@@ -15,36 +15,36 @@ const path4 = getFixturePath("file2.yaml");
 
 test("json-stylish", () => {
   const expected = fs.readFileSync(getFixturePath("stylishResult"), "utf-8");
-  const actual = genDiff(path1, path2, { format: "stylish" });
+  const actual = genDiff(path1, path2, "stylish");
   expect(actual).toBe(expected);
 });
 
 test("json-plain", () => {
   const expected = fs.readFileSync(getFixturePath("plainResult"), "utf-8");
-  const actual = genDiff(path1, path2, { format: "plain" });
+  const actual = genDiff(path1, path2, "plain");
   expect(actual).toBe(expected);
 });
 
 test("json-json", () => {
   const expected = fs.readFileSync(getFixturePath("jsonResult"), "utf-8");
-  const actual = genDiff(path1, path2, { format: "json" });
+  const actual = genDiff(path1, path2, "json");
   expect(actual).toBe(expected);
 });
 
 test("yaml-stylish", () => {
   const expected = fs.readFileSync(getFixturePath("stylishResult"), "utf-8");
-  const actual = genDiff(path3, path4, { format: "stylish" });
+  const actual = genDiff(path3, path4, "stylish");
   expect(actual).toBe(expected);
 });
 
 test("yaml-plain", () => {
   const expected = fs.readFileSync(getFixturePath("plainResult"), "utf-8");
-  const actual = genDiff(path3, path4, { format: "plain" });
+  const actual = genDiff(path3, path4, "plain");
   expect(actual).toBe(expected);
 });
 
 test("yaml-json", () => {
   const expected = fs.readFileSync(getFixturePath("jsonResult"), "utf-8");
-  const actual = genDiff(path3, path4, { format: "json" });
+  const actual = genDiff(path3, path4, "json");
   expect(actual).toBe(expected);
 });

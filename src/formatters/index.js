@@ -2,8 +2,7 @@ import getStylish from "./Stylish.js";
 import getPlain from "./Plain.js";
 import getJson from "./Json.js";
 
-const buildDifference = (tree, type) => {
-  const format = type ? type.format : "stylish";
+const buildDifference = (tree, format) => {
   switch (format) {
     case "plain":
       return getPlain(tree);
