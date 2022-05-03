@@ -19,6 +19,12 @@ test("json-stylish", () => {
   expect(actual).toBe(expected);
 });
 
+test("json-stylish_V2", () => {
+  const expected = fs.readFileSync(getFixturePath("stylishResult"), "utf-8");
+  const actual = genDiff(path1, path2);
+  expect(actual).toBe(expected);
+});
+
 test("json-plain", () => {
   const expected = fs.readFileSync(getFixturePath("plainResult"), "utf-8");
   const actual = genDiff(path1, path2, "plain");
