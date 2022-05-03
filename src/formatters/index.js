@@ -1,17 +1,17 @@
-import getStylish from "./Stylish.js";
-import getPlain from "./Plain.js";
-import getJson from "./Json.js";
+import getStylish from './Stylish.js';
+import getPlain from './Plain.js';
+import getJson from './Json.js';
 
 const buildDifference = (tree, format) => {
   switch (format) {
-    case "plain":
+    case 'plain':
       return getPlain(tree);
-    case "json":
+    case 'json':
       return getJson(tree);
-    case "stylish":
+    case 'stylish':
       return getStylish(tree);
     default:
-      return "";
+      return '';
   }
 };
 export default buildDifference;
