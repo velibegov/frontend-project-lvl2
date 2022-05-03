@@ -14,6 +14,7 @@ command
   .action((filepath1, filepath2, type) => {
     const path1 = path.resolve(filepath1);
     const path2 = path.resolve(filepath2);
-    console.log(app(path1, path2, type));
+    const format = (typeof type === "object" && type !== null) ? type.format : "stylish";
+    console.log(app(path1, path2, format));
   });
 command.parse();
