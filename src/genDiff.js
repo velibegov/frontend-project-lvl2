@@ -4,7 +4,7 @@ import YAML from 'yaml';
 import buildDifference from './formatters/index.js';
 
 const getFileContent = (path) => {
-  const extension = path.split('.').pop();
+  const extension = path.substr(path.lastIndexOf('.') + 1);
   if (extension === 'json') {
     return JSON.parse(fs.readFileSync(path, 'utf-8'));
   }
